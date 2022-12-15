@@ -6,20 +6,13 @@ import clients.pojo.User;
 import org.apache.commons.lang3.RandomStringUtils;
 
 public class Generator {
-//       public static User getDefaults(){
-
-//       return new User("text@texxt.ru", "password12", "User90009");
-
-    //    }
 
     public static User getDefault() {
-   final String userEmail = RandomStringUtils.randomAlphabetic(7) + "@test.ru";
-//         final String userEmail = "momss@tests.ru";
+        final String userEmail = RandomStringUtils.randomAlphabetic(7) + "@test.ru";
         final String userPassword = RandomStringUtils.randomAlphabetic(7);
-//          final String userPassword = "kekek123";
 
         final String userName = RandomStringUtils.randomAlphabetic(7);
-//final String userName = "NUMBERS";
+
         return new User(userEmail, userPassword, userName);
 
     }
@@ -75,10 +68,8 @@ public class Generator {
     }
 
     public static Changes changeData() {
-//        final String userEmailChange = RandomStringUtils.randomAlphabetic(7) + "@test.ru";
-        final String userEmailChange ="toxxic@mail.ru";
-//       final String userNameChange = RandomStringUtils.randomAlphabetic(7);
-  final String userNameChange = "toxxic1990";
+        final String userEmailChange = "toxxic@mail.ru";
+        final String userNameChange = "toxxic1990";
 
         return new Changes(userEmailChange, userNameChange);
     }
